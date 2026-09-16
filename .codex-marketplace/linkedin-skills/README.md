@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/linkedin-skills-hero.png" alt="12 Claude Code and Codex skills for LinkedIn marketing — open source, MIT licensed" width="900" />
+  <img src="assets/linkedin-skills-hero.png" alt="Claude Code and Codex skills for LinkedIn marketing — open source, MIT licensed" width="900" />
 </p>
 
 # LinkedIn Marketing Skills for Claude Code and Codex
@@ -17,7 +17,7 @@
 
 > 🚧 **Actively developed.** This bundle is under continuous improvement — skills, docs, and integrations are refined regularly. Star or watch the repo to follow along.
 
-**Claude skills for LinkedIn.** 12 Claude Code and Codex skills that write LinkedIn posts, comments, and replies in your voice. They draft content, strip AI tells, and wait for your approval before anything gets published. No coding required.
+**Claude skills for LinkedIn.** Claude Code and Codex skills that write LinkedIn posts, comments, and replies in your voice. They draft content, strip AI tells, and wait for your approval before anything gets published. No coding required.
 
 > **On another platform too?** The same team ships matching marketing skill bundles for [X (Twitter)](https://github.com/ANURAGJAMANKAR/x-skills) · [Instagram](https://github.com/ANURAGJAMANKAR/instagram-skills) · [YouTube](https://github.com/ANURAGJAMANKAR/youtube-skills) · [TikTok](https://github.com/ANURAGJAMANKAR/tiktok-skills) · [Threads](https://github.com/ANURAGJAMANKAR/threads-skills) · [Facebook](https://github.com/ANURAGJAMANKAR/facebook-skills). Same voice engine, same approve-before-publish flow.
 
@@ -97,7 +97,7 @@ git clone https://github.com/ANURAGJAMANKAR/linkedin-skills.git
 cd linkedin-skills
 ```
 
-The repo ships a `.claude/skills/` mirror of symlinks, so Claude Code finds all 12 skills on its own.
+The repo ships a `.claude/skills/` mirror of symlinks, so Claude Code finds every skill on its own.
 
 ### Hermes Agent
 
@@ -146,7 +146,7 @@ Once installed, just ask Claude Code or Codex for help with LinkedIn. The right 
 
 Every skill shows you a draft first and waits for your OK before doing anything. Nothing gets posted without your approval.
 
-## The 12 skills
+## The skills
 
 | Skill | What it does |
 |---|---|
@@ -162,6 +162,8 @@ Every skill shows you a draft first and waits for your OK before doing anything.
 | **Employee Advocacy** | Plans a team LinkedIn program: 14-day launch, posting cadence, brand governance, ROI tracking |
 | **Repurposer** | Turns content from another platform (tweet, thread, YouTube video, blog, newsletter) into a native LinkedIn post: re-hooks for the fold, expands to the 900-1300 char sweet spot, moves links to the first comment, runs the humanizer |
 | **Interviewer** | Interviews you and keeps the answers in a Story Bank: roles, receipts with real numbers, turning points, scars, positions you would defend. Every other skill reads it, so drafts stop asking you for a specific number mid-request. Also runs a focused interview that turns one topic into a post spine. The only skill that works when you have never posted before, since it needs a career rather than an archive |
+| **Brand Manager** | Sets your overall LinkedIn strategy before you draft anything: niche positioning (a "category of one"), target audience, content pillars, a cadence sized to your real weekly bandwidth, success metrics with 30/60/90 targets, and a growth roadmap. Writes a Brand Profile the planner and post writer read, so every draft ladders up to the strategy |
+| **Content Log** | The bundle's memory. Keeps a running record of every post, comment, and reply you draft, and the writing skills check it before drafting so you never repeat a topic by accident. A genuine update on an evolving story is allowed; a stale rehash gets flagged with the earlier post shown. Appends automatically after you approve |
 
 ## Built for founders
 
@@ -175,7 +177,7 @@ Just tell the Post Writer you are a founder, or ask the Content Planner for a "f
 
 ## Community skills
 
-Standalone skills built by other people on this bundle's conventions (same voice rules, same approval-card flow, same `Not for X (use Y)` disambiguation). They live in their authors' repos, so the core stays at 11 skills and one read/write pipeline. Install them next to this bundle the same way.
+Standalone skills built by other people on this bundle's conventions (same voice rules, same approval-card flow, same `Not for X (use Y)` disambiguation). They live in their authors' repos, so this bundle stays focused and the read/write pipeline stays shared. Install them next to this bundle the same way.
 
 - [linkedin-outreach](https://github.com/smfardeen7/linkedin-skills/tree/add-linkedin-outreach-skill/skills/linkedin-outreach) by [@smfardeen7](https://github.com/smfardeen7) - drafts 300-character connection-request notes (10 scenario templates) and post-accept follow-up sequences with day offsets and stop rules. Draft-only: LinkedIn has no invite or DM API, you paste and send.
 

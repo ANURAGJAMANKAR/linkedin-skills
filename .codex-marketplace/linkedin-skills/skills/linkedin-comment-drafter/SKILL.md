@@ -32,6 +32,8 @@ Then waits for user approval. On "post", calls Publora to react + comment.
 
 **Voice profile first (all drafts).** If `../../references/voice-profile.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `linkedin-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules. If `../../references/story-bank.md` has `filled: yes`, load it too and take concrete details (numbers, dates, named projects) from there instead of asking mid-draft. Never invent a figure that is not in it; if the bank has nothing that fits, ask the user or offer `linkedin-interviewer`.
 
+**Content log check (all drafts).** Before drafting, run the `linkedin-content-log` pre-draft check on the take you plan to make. On `REPEAT` (you already used this same take in a recent comment), vary the angle so you are not repeating yourself across other people's posts. After the user approves, append the comment to the content log.
+
 1. **Parse the URL.** Use `lib.url_parser.parse_linkedin_url` to get `post_urn` and, if present, the post's activity ID.
 2. **Fetch the post body.** If `APIFY_TOKEN` is set, call `lib.ApifyClient.fetch_post(url)` for the post body and `fetch_post_comments(post_id=..., max_items=10)` for the top existing comments (so your draft doesn't duplicate an existing take). Both actors are no-cookies and cost roughly $0.001 + $0.005 per call on the Apify free tier. If `APIFY_TOKEN` is not set, ask the user to paste the post text and (optionally) top comments.
 3. **Detect the author's closing question.** If the post ends with a "?" line, the Answer-the-Closing-Question template usually wins.
@@ -126,3 +128,4 @@ Full rule with examples: `../../references/untrusted-content.md`.
 - `linkedin-humanizer` — for aggressive AI-tell scrubbing
 - `linkedin-hook-extractor` — if you want to use the author's own hook as the basis for your reply
 - `linkedin-employee-advocacy` — the program that uses reshare mode to amplify brand and colleague posts across a team
+- `linkedin-content-log` — the repeat guard this skill calls before drafting and after approval

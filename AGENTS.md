@@ -43,8 +43,8 @@ otherwise.
 
 ## Skill bundle invariants
 
-- **Exactly 12 skills.** Adding requires merging or splitting elsewhere
-  to stay at 12. The number is announced in plugin manifests and the README.
+- **Exactly 14 skills.** Adding requires merging or splitting elsewhere
+  to stay at 14. The number is announced in the plugin manifest description and the README.
 - **Frontmatter `description:` target <= 400 chars** (some bundle-heavy
   skills land slightly higher when their scope is genuinely broad - keep
   under 510). Always include a "Not for X (use Y)" disambiguation

@@ -37,7 +37,7 @@ PATHS_TO_COPY = [
 #: template and never a filled copy: syncing after filling one would stage a
 #: voice fingerprint, client names and every number in a Story Bank into a
 #: tracked file, which nothing in the credential scan would recognise.
-PERSONAL = ("voice-profile.md", "story-bank.md")
+PERSONAL = ("voice-profile.md", "story-bank.md", "content-log.md", "brand-profile.md")
 
 
 def copy_path(src: Path, dest: Path) -> None:

@@ -5,7 +5,7 @@ description: "Plan, draft, audit, and publish LinkedIn posts and comments. Use w
 
 # LinkedIn Marketing Skills
 
-A bundle of 11 focused skills for LinkedIn content ops in 2026, built for Claude Code and Codex. Each skill is single-purpose, follows the draft → approval → publish pattern, and uses the [Publora API](https://publora.com) for posting.
+A bundle of 14 focused skills for LinkedIn content ops in 2026, built for Claude Code and Codex. Each skill is single-purpose, follows the draft → approval → publish pattern, and uses the [Publora API](https://publora.com) for posting.
 
 ## When to use this bundle
 
@@ -21,6 +21,8 @@ A bundle of 11 focused skills for LinkedIn content ops in 2026, built for Claude
 - **Running an employee advocacy program across a marketing team** → use `linkedin-employee-advocacy`
 - **Adapting content from another platform (tweet, video, blog) into a native LinkedIn post** → use `linkedin-repurposer`
 - **Working out what you actually have to say, or having nothing concrete for a draft to use** → use `linkedin-interviewer`. It interviews you and keeps the answers in `references/story-bank.md`, which every writing skill reads. Start here if you have never posted: the voice profile needs posts you already wrote, the Story Bank only needs a career.
+- **Setting your overall brand strategy** (niche positioning, audience, content pillars, a cadence sized to your real bandwidth, metrics, and a 30/60/90 roadmap) → use `linkedin-brand-manager`. It writes `references/brand-profile.md`, which the planner and post writer read so every draft ladders up to the strategy.
+- **Not repeating yourself** → use `linkedin-content-log`. It keeps `references/content-log.md`, a record of what you have already posted, commented, and replied. Every writing skill calls it before drafting to catch an accidental repeat (a genuine update on an evolving topic is fine) and appends to it after you approve.
 
 ## Founders edition
 

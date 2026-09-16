@@ -99,7 +99,7 @@ Every formula earns a primary reaction: comments, reposts, likes, or saves (see 
 
 ## Steps
 
-1. Gather inputs. Ask user for theme, audience, pillar preferences if not provided.
+1. Gather inputs. Ask user for theme, audience, pillar preferences if not provided. If `../../references/brand-profile.md` has `filled: yes`, load it first and take the positioning, audience, pillars, and cadence from there instead of asking, so the week ladders up to the standing strategy; if it is not filled, mention once that `linkedin-brand-manager` can set it. If `../../references/content-log.md` has `filled: yes`, load it and avoid scheduling a topic already covered in the last 30 days unless it is a genuine update.
 2. Validate pillar mix sums to 100%; warn if any pillar >60%.
 3. For each posting day, pick:
    - Pillar (rotate to match mix)
@@ -128,3 +128,5 @@ See `references/example-plan-week.md` for a filled-in 7-day plan.
 - `linkedin-comment-drafter` — execute the daily comment targets
 - `linkedin-thread-monitor` — track inbound from the comment strategy
 - `linkedin-engager-analytics` — segment audience on each post
+- `linkedin-brand-manager` — sets the positioning, pillars, and cadence this plan builds on
+- `linkedin-content-log` — the record of what you already posted, so the plan avoids repeats

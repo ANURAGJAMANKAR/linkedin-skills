@@ -22,6 +22,8 @@ Not for a blank-page draft (use `linkedin-post-writer`) and not for reviewing a 
 
 **Voice profile first (all drafts).** If `../../references/voice-profile.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `linkedin-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules. If `../../references/story-bank.md` has `filled: yes`, load it too and take concrete details (numbers, dates, named projects) from there instead of asking mid-draft. Never invent a figure that is not in it; if the bank has nothing that fits, ask the user or offer `linkedin-interviewer`.
 
+**Content log check (all drafts).** Before rebuilding the source, run the `linkedin-content-log` pre-draft check on the source's core claim and angle. On `REPEAT` (you already repurposed this source or angle recently), surface the prior entry and offer a fresh angle or a deliberate re-share before continuing. On `UPDATE`, build on the earlier post rather than restating it. After the user approves, append the post to the content log.
+
 1. **Take the source.** Any format: a tweet or thread, a video or script, a blog paragraph, a caption, a transcript, a bullet list, a link to read. Ask for the source and the goal (comments / reposts / likes / saves) if not given.
 2. **Extract the spine.** Strip the source platform's shell and pull out the one claim, story, or number worth keeping. Repurposing fails when it keeps the words instead of the point.
 3. **Re-hook for LinkedIn.** The hook must land in the first 210 characters, before the "...see more" fold. The source's hook rarely survives; write a new first line using one of the 20 formulas in `../../references/hook-formulas.md`, picked by the goal.
@@ -73,3 +75,4 @@ Global voice rules: see root `SKILL.md` §Voice rules. Additional skill-specific
 - `linkedin-post-writer` - write a fresh post from scratch
 - `linkedin-humanizer` - scrub AI tells, plus `--mode audit` to review the result
 - `linkedin-hook-extractor` - reverse-engineer a hook from a post you admire
+- `linkedin-content-log` - the repeat guard this skill calls before drafting and after approval
